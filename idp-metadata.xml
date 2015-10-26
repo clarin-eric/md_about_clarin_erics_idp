@@ -10,7 +10,7 @@
     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
     xmlns:shibmd="urn:mace:shibboleth:metadata:1.0">
     <md:IDPSSODescriptor
-        protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+        protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
         <md:Extensions>
             <shibmd:Scope
                 regexp="false">clarin.eu</shibmd:Scope>
@@ -59,18 +59,10 @@
             </ds:KeyInfo>
         </md:KeyDescriptor>
         <md:ArtifactResolutionService
-            Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding"
-            Location="https://idp.clarin.eu/profile/SAML1/SOAP/ArtifactResolution"
-            index="1"/>
-        <md:ArtifactResolutionService
             Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
             Location="https://idp.clarin.eu/profile/SAML2/SOAP/ArtifactResolution"
             index="2"/>
-        <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
         <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
-        <md:SingleSignOnService
-            Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest"
-            Location="https://idp.clarin.eu/profile/Shibboleth/SSO"/>
         <md:SingleSignOnService
             Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
             Location="https://idp.clarin.eu/profile/SAML2/POST/SSO"/>
@@ -82,7 +74,7 @@
             Location="https://idp.clarin.eu/profile/SAML2/Redirect/SSO"/>
     </md:IDPSSODescriptor>
     <md:AttributeAuthorityDescriptor
-        protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+        protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
         <md:Extensions>
             <shibmd:Scope
                 regexp="false">clarin.eu</shibmd:Scope>
@@ -118,12 +110,8 @@
             </ds:KeyInfo>
         </md:KeyDescriptor>
         <md:AttributeService
-            Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding"
-            Location="https://idp.clarin.eu/profile/SAML1/SOAP/AttributeQuery"/>
-        <md:AttributeService
             Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
             Location="https://idp.clarin.eu/profile/SAML2/SOAP/AttributeQuery"/>
-        <md:NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</md:NameIDFormat>
         <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
     </md:AttributeAuthorityDescriptor>
     <md:Organization>
