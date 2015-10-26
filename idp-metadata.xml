@@ -73,47 +73,6 @@
             Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
             Location="https://idp.clarin.eu/profile/SAML2/Redirect/SSO"/>
     </md:IDPSSODescriptor>
-    <md:AttributeAuthorityDescriptor
-        protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-        <md:Extensions>
-            <shibmd:Scope
-                regexp="false">clarin.eu</shibmd:Scope>
-        </md:Extensions>
-        <md:KeyDescriptor>
-            <ds:KeyInfo>
-                <ds:X509Data>
-                    <ds:X509Certificate>
-                        MIIEATCCAumgAwIBAgIJAJmcvEfxDomMMA0GCSqGSIb3DQEBCwUAMIGVMRowGAYD
-                        VQQDExFkZXYtaWRwLmNsYXJpbi5ldTELMAkGA1UEBhMCRVUxEDAOBgNVBAcTB1V0
-                        cmVjaHQxFDASBgNVBAoTC0NMQVJJTiBFUklDMSQwIgYDVQQLExtTZXJ2aWNlIFBy
-                        b3ZpZGVyIEZlZGVyYXRpb24xHDAaBgkqhkiG9w0BCQEWDXNwZkBjbGFyaW4uZXUw
-                        HhcNMTUwNTA4MTIxOTQ1WhcNMTgwNTA3MTIxOTQ1WjCBlTEaMBgGA1UEAxMRZGV2
-                        LWlkcC5jbGFyaW4uZXUxCzAJBgNVBAYTAkVVMRAwDgYDVQQHEwdVdHJlY2h0MRQw
-                        EgYDVQQKEwtDTEFSSU4gRVJJQzEkMCIGA1UECxMbU2VydmljZSBQcm92aWRlciBG
-                        ZWRlcmF0aW9uMRwwGgYJKoZIhvcNAQkBFg1zcGZAY2xhcmluLmV1MIIBIjANBgkq
-                        hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt9njQQ5MLsWPoIKL6YEejza529YG1rTu
-                        tWXaRx+V/v1lPf+koNj2+2636zVeiQv23iHDFD3Q85BadHrGT6rqfls8p9isTUuX
-                        AXERKmsVYE9CFCKriKszXWdewiQowYcgO2eTY+Jk/aYTJ00hpN/uWnm2EehAJt2y
-                        3HhdR/Pj3w1DAIPmE8pEvID/jNe58VHKdnN+hs/bjuvwfImZqanhaODGildGf5nz
-                        XvggffZgE1XgdFcOgve8oSivFf2MfKTYsD+OmKyiamgbTuiFYI8uR5VpE+u4DDou
-                        xN2mnNf+z9abLe8Uc3fGVzj2iFwmtpmmHTrhNCq2n8QbN+O6h/3CeQIDAQABo1Iw
-                        UDAvBgNVHREEKDAmgg1pZHAuY2xhcmluLmV1hhVodHRwczovL2lkcC5jbGFyaW4u
-                        ZXUwHQYDVR0OBBYEFD6e54GIj8ZmIsWyAjrouMU4MYAfMA0GCSqGSIb3DQEBCwUA
-                        A4IBAQBU+AD+10mRnHyM1jCJcFaM60KeI4y1gD4O03uaqB0ltW4YB9QHwxhvSWPZ
-                        swidPeQY9ISV+T/y185dCXfH7aIzOW1I41LZoistA5Heahdk9dlDmluCZlt9FB++
-                        ud3/LYhKn21+usYHDZoXTuzjd8E+y8qlmsKi6odlclx0TyFhjA4kGtRcvflgZ9T2
-                        DRm8Y3kLGDJHB8EpUYAh1RuyrNZebHT1I8RLUUSxBkU+K31uBB2v4JlYhOQD5NIp
-                        sFLulIYmK16eZmqKcephQj9+nw1aQ28X3PJPvYfmB5qCpu+y/P+sRnxhYytvLYik
-                        xAnbtZ5kYegoEe0nfV+UAvWWki7o
-                    </ds:X509Certificate>
-                </ds:X509Data>
-            </ds:KeyInfo>
-        </md:KeyDescriptor>
-        <md:AttributeService
-            Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
-            Location="https://idp.clarin.eu/profile/SAML2/SOAP/AttributeQuery"/>
-        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
-    </md:AttributeAuthorityDescriptor>
     <md:Organization>
         <md:OrganizationName
             xml:lang="en">CLARIN ERIC</md:OrganizationName>
