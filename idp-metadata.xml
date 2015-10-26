@@ -15,9 +15,9 @@
             <shibmd:Scope
                 regexp="false">clarin.eu</shibmd:Scope>
             <mdrpi:RegistrationInfo
-                registrationAuthority="https://www.clarin.eu/spf"> </mdrpi:RegistrationInfo>
+                registrationAuthority="https://www.clarin.eu/spf"></mdrpi:RegistrationInfo>
             <mdui:UIInfo>
-                <mdui:DisplayName xml:lang="en">CLARIN IdP</mdui:DisplayName>
+                <mdui:DisplayName xml:lang="en">clarin.eu website account</mdui:DisplayName>
                 <mdui:Description xml:lang="en">You can use this IdP when your academic account does not belong to an identity federation that has ties with the CLARIN Service Provider Federation. It is also known as the ‘homeless’ IdP.</mdui:Description>
                 <mdui:InformationURL xml:lang="en">https://www.clarin.eu/content/clarin-identity-provider</mdui:InformationURL>
                 <!-- <mdui:PrivacyStatementURL xml:lang="en"></mdui:PrivacyStatementURL> -->
